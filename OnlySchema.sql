@@ -1,0 +1,203 @@
+-- MySQL dump 10.13  Distrib 8.0.43, for Win64 (x86_64)
+--
+-- Host: localhost    Database: online_bookstore_final
+-- ------------------------------------------------------
+-- Server version	8.0.43
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `addresses`
+--
+
+LOCK TABLES `addresses` WRITE;
+/*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
+INSERT INTO `addresses` VALUES (4,6,'Atharva Waghmare','Near Ghantibaba Temple, Arni Road, Digras','DIGRAS','Maharashtra','445203','India','0022664452',0,NULL,NULL,NULL,NULL),(5,10,'Atharva Waghmare','Near Ghantibaba Temple, Arni Road, Digras','DIGRAS','Maharashtra','445203','India','9022664452',0,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `authors`
+--
+
+LOCK TABLES `authors` WRITE;
+/*!40000 ALTER TABLE `authors` DISABLE KEYS */;
+INSERT INTO `authors` VALUES (2,'Atharva Waghmare','Very Good Author',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `authors` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `book_inventory`
+--
+
+LOCK TABLES `book_inventory` WRITE;
+/*!40000 ALTER TABLE `book_inventory` DISABLE KEYS */;
+INSERT INTO `book_inventory` VALUES (4,4,5,NULL,150.00,250.00,25,1,'2026-01-29 11:31:23','2026-02-01 12:02:09',NULL,NULL,NULL,NULL),(5,4,6,NULL,200.00,300.00,25,1,'2026-01-29 11:34:52','2026-02-01 10:30:17',NULL,NULL,NULL,NULL),(6,4,7,NULL,300.00,400.00,15,1,'2026-01-29 11:45:29','2026-01-30 10:56:37',NULL,NULL,NULL,NULL),(8,4,9,NULL,100.00,200.00,4,1,'2026-01-29 16:54:33','2026-01-30 11:12:32',NULL,NULL,NULL,NULL),(9,4,10,NULL,100.00,200.00,115,1,'2026-01-29 17:06:26','2026-01-29 19:38:08',NULL,NULL,NULL,NULL),(10,4,8,NULL,150.00,250.00,20,1,'2026-01-29 20:55:34',NULL,NULL,NULL,NULL,NULL),(11,5,11,NULL,100.00,120.00,18,1,'2026-01-30 07:34:39','2026-01-30 07:36:09',NULL,NULL,NULL,NULL),(12,12,37,NULL,400.00,500.00,10,1,'2026-02-01 11:20:34','2026-02-01 11:22:22',NULL,NULL,NULL,NULL),(13,12,39,NULL,100.00,200.00,30,1,'2026-02-01 11:41:51','2026-02-01 11:51:13',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `book_inventory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `books`
+--
+
+LOCK TABLES `books` WRITE;
+/*!40000 ALTER TABLE `books` DISABLE KEYS */;
+INSERT INTO `books` VALUES (5,'Create Your Own Business ','Very nice book','8787',2,2,2,'2020-12-20',360,'english','uploads/34caebee2ae5b69fe7df10ef8fd64a65.jpg','ADMIN',NULL,1,'2026-01-29 11:31:23','2026-01-29 20:56:02',NULL,NULL,NULL,NULL),(6,'Tour & Travels','Tour Guide','2345',NULL,NULL,NULL,NULL,NULL,'English','uploads/1769686492937-774957590.jpg','OWNER',7,1,'2026-01-29 11:34:52','2026-01-30 11:09:05',NULL,NULL,NULL,NULL),(7,'My Book Cover','nice book','7878',NULL,NULL,NULL,NULL,NULL,'English','uploads/1769687129971-335665489.jpg','OWNER',7,1,'2026-01-29 11:45:29',NULL,NULL,NULL,NULL,NULL),(8,'sasas','adadaw','455',2,2,2,NULL,NULL,'english',NULL,'OWNER',7,1,'2026-01-29 12:52:53',NULL,NULL,NULL,NULL,NULL),(9,'uhuhuhada','awdawda','56565',2,2,2,'1990-12-20',100,'marathi','uploads/3f228ebc31a40f57ce676de211c1ac84.jpg','ADMIN',NULL,1,'2026-01-29 16:54:33',NULL,NULL,NULL,NULL,NULL),(10,'dwdwdw','efefe','342',NULL,NULL,NULL,NULL,NULL,'marathi','uploads/1769706386265-490741473.jpg','OWNER',7,1,'2026-01-29 17:06:26',NULL,NULL,NULL,NULL,NULL),(11,'deedeeeee','aaaaaaaaaaaaaaaaaaaaaaa','3333',NULL,NULL,NULL,NULL,NULL,'English','uploads/1769758479404-737419539.png','OWNER',7,1,'2026-01-30 07:34:39',NULL,NULL,NULL,NULL,NULL),(12,'Ashruuu','good girl','4343',2,2,2,'2009-08-31',200,'Hinglish','uploads/6cfacf8ab7a60ba59e52949467cd8893','ADMIN',NULL,1,'2026-02-01 11:15:33',NULL,NULL,NULL,NULL,NULL),(37,'wdwdw','wdwdw','wdwdw',NULL,NULL,NULL,NULL,NULL,'wdwdw','uploads/1769944834152-850788203.jpg','OWNER',7,1,'2026-02-01 11:20:34',NULL,NULL,NULL,NULL,NULL),(38,'qqqqqqqq','qqqqqqqqq','2323',2,2,2,'2020-12-20',888,'qqqqqq','uploads/39bc91c3c559dcf1bc7d3c0e1a0cd5b4','ADMIN',NULL,1,'2026-02-01 11:21:42',NULL,NULL,NULL,NULL,NULL),(39,'eeeeeeeeeeeee','eeeeeeeeeee','434',2,2,2,'2012-12-12',222,'kokok2','uploads/c9e0890377c9aad156f3960d85f642e8','ADMIN',NULL,1,'2026-02-01 11:41:51',NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `books` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `bookstores`
+--
+
+LOCK TABLES `bookstores` WRITE;
+/*!40000 ALTER TABLE `bookstores` DISABLE KEYS */;
+INSERT INTO `bookstores` VALUES (4,7,'Yash Book Store','Good Book Store','Near Ghantibaba Temple, Arni Road, Digras','YAVATMAL','MAHARASHTRA','445203','India','yash@gmail.com','09022664452','uploads/1769706350849-915549939.jpg',1,'2026-01-29 11:25:19',NULL,NULL,NULL,NULL),(5,7,'Yavatmal Book Store','edede','Near Ghantibaba Temple, Arni Road, Digras','YAVATMAL','MAHARASHTRA','445203','India','atharvawaghmare878@gmail.com','9022664452',NULL,1,'2026-01-29 17:08:47',NULL,NULL,NULL,NULL),(6,7,'wwwwwwdd','adddddddd','Near Ghantibaba Temple, Arni Road, Digras','DIGRAS','Maharashtra','445203','India','atharvawaghmare878@gmail.com','09022664452',NULL,1,'2026-01-29 17:19:37',NULL,NULL,NULL,NULL),(7,7,'adaadad',NULL,NULL,NULL,NULL,NULL,NULL,'adada',NULL,NULL,1,'2026-01-29 17:19:52',NULL,NULL,NULL,NULL),(8,7,'Santosh',NULL,NULL,NULL,NULL,NULL,NULL,'Santosh Bookwala',NULL,NULL,1,'2026-01-30 11:17:04',NULL,NULL,NULL,NULL),(9,7,'Santosh Bookwala',NULL,'Near Ghantibaba Temple, Arni Road, Digras','YAVATMAL','MAHARASHTRA','445203','India','santosh@gmail.com','09022664452',NULL,1,'2026-01-30 11:17:44',NULL,NULL,NULL,NULL),(10,7,'Don book store','good store','Near Ghantibaba Temple, Arni Road, Digras','DIGRAS','Maharashtra','445203','India','atharvawaghmare878@gmail.com','09022664452',NULL,1,'2026-02-01 09:42:18',NULL,NULL,NULL,NULL),(11,7,'Shruti Books',NULL,NULL,NULL,NULL,NULL,NULL,'shruti@gmail.com',NULL,NULL,1,'2026-02-01 11:11:23',NULL,NULL,NULL,NULL),(12,7,'Guddu','Guddu book Store','Near Ghantibaba Temple, Arni Road, Digras','DIGRAS','Maharashtra','445203','India','atharvawaghmare878@gmail.com','09022664452',NULL,1,'2026-02-01 11:12:23',NULL,NULL,NULL,NULL),(13,7,'Minakshi','aaaaaaaa','Near Ghantibaba Temple, Arni Road, Digras','YAVATMAL','MAHARASHTRA','445203','India','atharvawaghmare878@gmail.com','09022664452',NULL,1,'2026-02-01 11:52:08',NULL,NULL,NULL,NULL),(14,7,'Shakuntala',NULL,NULL,NULL,NULL,NULL,NULL,'shakuntala@gmail.com',NULL,NULL,1,'2026-02-01 11:52:30',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `bookstores` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `cart`
+--
+
+LOCK TABLES `cart` WRITE;
+/*!40000 ALTER TABLE `cart` DISABLE KEYS */;
+INSERT INTO `cart` VALUES (112,6,'2026-01-29 18:50:39',NULL,NULL,NULL,NULL),(118,10,'2026-01-29 20:39:26',NULL,NULL,NULL,NULL),(119,11,'2026-01-30 06:42:27',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `cart` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `cart_items`
+--
+
+LOCK TABLES `cart_items` WRITE;
+/*!40000 ALTER TABLE `cart_items` DISABLE KEYS */;
+INSERT INTO `cart_items` VALUES (61,119,5,1,180.00,'2026-01-30 06:42:27',NULL,NULL,NULL,NULL),(62,119,4,1,100.00,'2026-01-30 06:42:28',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `cart_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `categories`
+--
+
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` VALUES (2,'Science',NULL,NULL,NULL,NULL,NULL),(3,'Fictions',NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `notifications`
+--
+
+LOCK TABLES `notifications` WRITE;
+/*!40000 ALTER TABLE `notifications` DISABLE KEYS */;
+/*!40000 ALTER TABLE `notifications` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `order_items`
+--
+
+LOCK TABLES `order_items` WRITE;
+/*!40000 ALTER TABLE `order_items` DISABLE KEYS */;
+INSERT INTO `order_items` VALUES (3,3,6,2,200.00,NULL,NULL,NULL,NULL),(4,4,9,3,100.00,NULL,NULL,NULL,NULL),(5,4,6,2,200.00,NULL,NULL,NULL,NULL),(6,5,5,5,180.00,NULL,NULL,NULL,NULL),(7,5,6,2,200.00,NULL,NULL,NULL,NULL),(8,6,6,5,200.00,NULL,NULL,NULL,NULL),(9,7,8,2,100.00,NULL,NULL,NULL,NULL),(10,8,9,2,100.00,NULL,NULL,NULL,NULL),(11,9,4,1,100.00,NULL,NULL,NULL,NULL),(12,9,5,1,180.00,NULL,NULL,NULL,NULL),(13,10,8,4,100.00,NULL,NULL,NULL,NULL),(14,11,8,6,100.00,NULL,NULL,NULL,NULL),(15,12,5,1,180.00,NULL,NULL,NULL,NULL),(16,13,11,2,100.00,NULL,NULL,NULL,NULL),(17,14,8,2,100.00,NULL,NULL,NULL,NULL),(18,15,8,1,100.00,NULL,NULL,NULL,NULL),(19,16,8,1,100.00,NULL,NULL,NULL,NULL),(20,17,4,16,100.00,NULL,NULL,NULL,NULL),(21,18,5,1,200.00,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `order_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `orders`
+--
+
+LOCK TABLES `orders` WRITE;
+/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (3,6,4,'2026-01-29 19:00:07','Delivered',400.00,NULL,NULL,NULL,NULL),(4,6,4,'2026-01-29 19:01:56','Cancelled',700.00,NULL,NULL,NULL,NULL),(5,6,4,'2026-01-29 19:14:52','Delivered',1300.00,NULL,NULL,NULL,NULL),(6,6,4,'2026-01-29 19:28:54','Delivered',1000.00,NULL,NULL,NULL,NULL),(7,6,4,'2026-01-29 19:37:58','Delivered',200.00,NULL,NULL,NULL,NULL),(8,6,4,'2026-01-29 19:38:08','Cancelled',200.00,NULL,NULL,NULL,NULL),(9,10,5,'2026-01-30 06:08:24','Shipped',280.00,NULL,NULL,NULL,NULL),(10,10,5,'2026-01-30 06:09:32','Cancelled',400.00,NULL,NULL,NULL,NULL),(11,10,5,'2026-01-30 06:46:39','Cancelled',600.00,NULL,NULL,NULL,NULL),(12,10,5,'2026-01-30 06:47:18','Pending',180.00,NULL,NULL,NULL,NULL),(13,10,5,'2026-01-30 07:36:09','Delivered',200.00,NULL,NULL,NULL,NULL),(14,10,5,'2026-01-30 11:11:35','Delivered',200.00,NULL,NULL,NULL,NULL),(15,10,5,'2026-01-30 11:12:05','Confirmed',100.00,NULL,NULL,NULL,NULL),(16,10,5,'2026-01-30 11:12:32','Cancelled',100.00,NULL,NULL,NULL,NULL),(17,10,5,'2026-01-30 16:33:37','Shipped',1600.00,NULL,NULL,NULL,NULL),(18,10,5,'2026-02-01 10:30:17','Delivered',200.00,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `password_otps`
+--
+
+LOCK TABLES `password_otps` WRITE;
+/*!40000 ALTER TABLE `password_otps` DISABLE KEYS */;
+/*!40000 ALTER TABLE `password_otps` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `payments`
+--
+
+LOCK TABLES `payments` WRITE;
+/*!40000 ALTER TABLE `payments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `publishers`
+--
+
+LOCK TABLES `publishers` WRITE;
+/*!40000 ALTER TABLE `publishers` DISABLE KEYS */;
+INSERT INTO `publishers` VALUES (2,'Atharva Waghmare','9022664452',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `publishers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `reviews`
+--
+
+LOCK TABLES `reviews` WRITE;
+/*!40000 ALTER TABLE `reviews` DISABLE KEYS */;
+/*!40000 ALTER TABLE `reviews` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `roles`
+--
+
+LOCK TABLES `roles` WRITE;
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` VALUES (1,'ADMIN',NULL,NULL,NULL,NULL),(2,'USER',NULL,NULL,NULL,NULL),(3,'OWNER',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (6,1,'Atharva','atharvawaghmare878@gmail.com','$2b$10$p.kXK/4ctE.ErYYjuAFRo.Z4XM9.Ynh1M6fbINnwDxp4lbvOjA6E6','9022664452',1,'2026-01-29 11:18:55','2026-02-01 10:29:54',NULL,NULL,NULL,NULL),(7,3,'Yash Mahajan','yash@gmail.com','$2b$10$8Di.ORRq1CuZfblBi4YewOdwyG0OaBrl83FBymeSZnfWbKuxPa7Am','8888888888',1,'2026-01-29 11:20:25','2026-01-30 11:12:59',NULL,NULL,NULL,NULL),(10,2,'athina','athina@gmail.com','$2b$10$obrRXnVaBCVZbaMRXcOW/eBqh9uyO7r.Us12d05iNFyfQYber1O36','5656565656',1,'2026-01-29 20:39:05','2026-02-01 12:00:54',NULL,NULL,NULL,NULL),(11,2,'hero','hero@gmail.com','$2b$10$RAD9Xsa9pP0GnIe43KPz9OnkXVCzH3qK1B6X83k7blqiKSTqlSIJm','4545454545',1,'2026-01-30 06:42:02','2026-01-30 11:12:56',NULL,NULL,NULL,NULL),(12,2,'kiran','milosok942@juhxs.com','$2b$10$lxsU.hgUGCoNIWPJY8Uz6.kmgcyeTOO9G9QgC/gqjl8C0kFTE3SIa','9847837487',1,'2026-01-30 19:07:54','2026-01-30 19:11:17',NULL,NULL,NULL,NULL),(13,3,'daku','daku@gmail.com','$2b$10$7kLnGYcRdc9KOGuXuiMkgeGKOnT.4q5vHAPStfnq5x/S/z3.Vbs4.','5678678765',1,'2026-01-30 19:48:23',NULL,NULL,NULL,NULL,NULL),(14,2,'tanvi','tanvi@gmail.com','$2b$10$V1jphhkrU4kZDWVQakKnz.cKgW50.AntgMtxafK4/pg6pzpbxl01y','5678789087',1,'2026-01-30 20:10:20','2026-01-30 20:11:38',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `wishlist`
+--
+
+LOCK TABLES `wishlist` WRITE;
+/*!40000 ALTER TABLE `wishlist` DISABLE KEYS */;
+INSERT INTO `wishlist` VALUES (48,10,5,'2026-02-01 10:29:33');
+/*!40000 ALTER TABLE `wishlist` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-02-01 18:18:23
