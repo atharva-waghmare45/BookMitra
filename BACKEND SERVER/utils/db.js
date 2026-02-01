@@ -1,13 +1,13 @@
-// utils/db.js
-
 const mysql = require('mysql2');
 
-// Create MySQL connection pool
 const pool = mysql.createPool({
-    host: 'localhost',          // DB host
-    user: 'root',               // DB username
-    password: 'manager',               // DB password
-    database: 'online_bookstore_final', // DB name       // Max connections
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    waitForConnections: true,
+  
 });
 
 module.exports = pool;
